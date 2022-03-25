@@ -4,6 +4,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         "main-background": "url('assets/futuristic-background.png')",
+        "layout-header-one": "url('assets/layout-header-one.png')",
       },
     },
     fontFamily: {
