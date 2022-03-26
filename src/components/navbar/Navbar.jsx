@@ -24,8 +24,26 @@ export default function Navbar() {
         </div>
       </div>
       <div className=" flex justify-end">
-        <div className="">
-          <div className="text-1l">Name</div>
+        <div className="grid grid-cols-2">
+          <div className="flex justify-end items-center mr-4">
+            <img
+              class="inline object-cover w-12 h-12  rounded-md"
+              src="https://images.pexels.com/photos/2589653/pexels-photo-2589653.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+              alt="Profile image"
+            />
+          </div>
+          <div className="grid grid-rows-2">
+            <div className="text-2xl font-normal  ">Lorenzo</div>
+            <div className="grid grid-cols-2">
+              <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                <div
+                  className="bg-yellow-600 h-2.5 rounded-full"
+                  style={{ width: "50%" }}
+                ></div>
+                <span>Level 1</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
