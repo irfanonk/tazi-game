@@ -3,8 +3,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "main-background": "url('assets/futuristic-background.png')",
-        "layout-header-one": "url('assets/layout-header-one.png')",
+        "main-background": "url('assets/images/futuristic-background.png')",
+        "layout-header-one": "url('assets/images/layout-header-one.png')",
       },
     },
     fontFamily: {
