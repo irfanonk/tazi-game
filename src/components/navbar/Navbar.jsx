@@ -7,7 +7,7 @@ export default function Navbar() {
   const location = useLocation();
   const path = location.pathname;
   return (
-    <div className="grid grid-cols-6  p-5 h-24 min-h-full ">
+    <div className="grid xl:grid-cols-6 ld:grid-cols-6 md:grid-cols-4 lg:grid-cols-4 p-5 h-24 min-h-full ">
       {/*       <div className="w-[fit-content] font-courgette text-3xl cursor-pointer hover:scale-125 transition duration-200">
         Deposit App
       </div> */}
