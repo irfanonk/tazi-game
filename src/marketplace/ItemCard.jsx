@@ -33,7 +33,7 @@ export default function ItemCard({ item }) {
             <div className="text-sm text-[#A7B0FF] "> 0X993434343…. </div>
           </div>
           <div className="flex justify-center items-center">
-            <div className="flex justify-center items-center  h-[48px] h-fit w-[100px]  bg-dog-card-footer-label bg-no-repeat bg-cover">
+            <div className="flex justify-center items-center  h-[48px] w-[100px]  bg-dog-card-footer-label bg-no-repeat bg-cover">
               <img
                 className="w-6 h-6 mr-2"
                 src={require("../assets/images/dog-card-footer-label-icon.png")}
