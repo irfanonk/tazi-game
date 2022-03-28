@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { getDogs } from "../apis/dogs";
+
 import ItemCard from "../marketplace/ItemCard";
 
 export default function MarketPlace() {
@@ -34,11 +36,25 @@ export default function MarketPlace() {
       bgColor: "#6A8F3B",
     },
   ];
+  const [dogs, setDogs] = useState([]);
+  useEffect(() => {
+    (async () => {
+      try {
+        const response = await getDogs();
+        console.log("dogs", dogs);
+        setDogs(response.data);
+      } catch (error) {
+        console.log(error);
+      }
+    })();
+
+    return () => {};
+  }, []);
 
   return (
-    <div className="grid grid-cols-4 gap-4">
-      {items.map((item, index) => (
-        <ItemCard item={item} key={index} />
+    <div className="grid grid-cols-4">
+      {dogs.map((item, index) => (
+        <ItemCard key={index} item={item} key={index} />
       ))}
     </div>
   );

@@ -1,15 +1,18 @@
 import React from "react";
+import { dog1, dog2, dog3 } from "../assets/svgs/dogSvg";
 
 export default function ItemCard({ item }) {
-  const { id, title, bgColor } = item;
+  const { id, title, bgColor, key } = item;
   return (
-    <div className="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
-      <div>
+    <div className="bg-transparent">
+      <div className="">
         <img
-          className={`bg-[#00092E] bg-main-background bg-cover bg-right`}
-          src={require("../assets/images/dog.png")}
+          className={`max-w-sm h-auto pb-4 bg-main-background  bg-cover bg-right`}
+          src={require("../assets/images/dog-" + id + ".png")}
           alt=""
         />
+
+        <div className=" fixed  z-[2]"> naber</div>
       </div>
       <div className="p-5">
         <a href="#">

@@ -14,6 +14,7 @@ export default function Navbar() {
         <div className="flex flex-row justify-center content-center">
           {navItems.map((item, index) => (
             <Link
+              key={index}
               isActive={true}
               className="mr-5 hover:bg-blue-200 transition duration-200"
               to={`/${item}`}
@@ -27,7 +28,7 @@ export default function Navbar() {
         <div className="grid grid-cols-2">
           <div className="flex justify-end items-center mr-4">
             <img
-              class="inline object-cover w-12 h-12  rounded-md"
+              className="inline object-cover w-12 h-12  rounded-md"
               src="https://images.pexels.com/photos/2589653/pexels-photo-2589653.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
               alt="Profile image"
             />
