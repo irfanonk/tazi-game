@@ -9,8 +9,8 @@ export default function PaginationSection() {
           src={require("../../assets/images/arrow.png")}
           alt=""
         />
-        <div className="text-l mr-2">Back Page</div>
-        <div className="text-l mr-1">Next Page</div>
+        <div className="text-xl mr-2">Back Page</div>
+        <div className="text-xl mr-1">Next Page</div>
         <img
           className="w-3 h-4 "
           src={require("../../assets/images/arrow.png")}
@@ -24,7 +24,7 @@ export default function PaginationSection() {
           alt=""
         />
         {Array.from(Array(15).keys()).map((item) => (
-          <div className="w-[29px] h-[29px] rounded-full border-2 border-[#2099AB] ">
+          <div className="w-[29px] h-[29px] rounded-full border-2 border-[#2099AB] hover:bg-yellow text-white transition duration-200 ">
             {item + 1}{" "}
           </div>
         ))}
@@ -35,7 +35,7 @@ export default function PaginationSection() {
         />
       </div>
       <div class="flex flex-1 items-center  justify-end mr-12 ">
-        <div className="text-l mr-1">Show On Page</div>
+        <div className="text-xl mr-1">Show On Page</div>
         <div className="text-xl mr-1">50</div>
         <img
           className="w-3 h-4 rotate-90 "

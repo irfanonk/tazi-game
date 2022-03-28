@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ItemCard({ item }) {
+export default function MPItemCard({ item }) {
   const { id, title, ticket, likes } = item;
   return (
     <div className="bg-transparent">
