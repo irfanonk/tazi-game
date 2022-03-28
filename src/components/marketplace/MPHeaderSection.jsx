@@ -9,7 +9,7 @@ export default function MPHeaderSection() {
         <div className=" text-2xl font-bold uppercase">pagas</div>
         <div className="text-2xl font-bold uppercase">item</div>
       </div>
-      <div className="flex flex-1 justify-end  gap-3">
+      <div className="flex flex-1 justify-end mr-12 gap-3">
         <div className="flex text-center items-center">
           <div className="text-l mr-1 ">Gender</div>
           <img

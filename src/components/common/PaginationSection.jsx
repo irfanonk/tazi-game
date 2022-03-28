@@ -3,7 +3,7 @@ import React from "react";
 export default function PaginationSection() {
   return (
     <div className="pagination-box text-center justify-center flex items-center h-[67px] min-h-full bg-[#051B5C]  ">
-      <div class="flex flex-1 justify-start items-center ml-8">
+      <div class="flex flex-1 justify-start items-center ml-12">
         <img
           className="w-3 h-4 rotate-180 mr-1 "
           src={require("../../assets/images/arrow.png")}
@@ -17,7 +17,7 @@ export default function PaginationSection() {
           alt=""
         />
       </div>
-      <div class="flex flex-2 justify-center  items-center gap-x-4  ">
+      <div class="flex flex-1 justify-center  items-center gap-x-4  ">
         <img
           className="w-6 h-8 rotate-180"
           src={require("../../assets/images/arrow.png")}
@@ -34,7 +34,7 @@ export default function PaginationSection() {
           alt=""
         />
       </div>
-      <div class="flex flex-1 items-center  justify-end mr-8  ">
+      <div class="flex flex-1 items-center  justify-end mr-12 ">
         <div className="text-l mr-1">Show On Page</div>
         <div className="text-xl mr-1">50</div>
         <img
