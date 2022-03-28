@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { getDogs } from "../apis/dogs";
 import PaginationSection from "../components/common/PaginationSection";
-
 import ItemCard from "../components/marketplace/ItemCard";
+import MPHeaderSection from "../components/marketplace/MPHeaderSection";
 
 export default function MarketPlace() {
   const items = [
@@ -54,6 +54,9 @@ export default function MarketPlace() {
 
   return (
     <div className="p-10 ">
+      <div className="mb-10">
+        <MPHeaderSection />
+      </div>
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-6">
         {dogs.map((item, index) => (
           <ItemCard key={index} item={item} key={index} />

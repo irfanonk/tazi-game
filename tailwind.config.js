@@ -8,6 +8,9 @@ module.exports = {
         "dog-card-footer-label":
           "url('assets/images/dog-card-footer-label.png')",
       },
+      colors: {
+        yellow: "#F1C004",
+      },
     },
     fontFamily: {
       festive: ["Festive", "cursive"],

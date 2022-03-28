@@ -16,7 +16,7 @@ export default function Navbar() {
             <Link
               key={index}
               isActive={true}
-              className="mr-5 hover:bg-blue-200 transition duration-200"
+              className="mr-5 hover:text-blue-200 transition duration-200"
               to={`/${item}`}
             >
               <p className="text-3xl uppercase">{item.replace("-", " ")} </p>{" "}

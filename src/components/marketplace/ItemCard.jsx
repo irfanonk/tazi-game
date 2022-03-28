@@ -27,7 +27,7 @@ export default function ItemCard({ item }) {
       <div className="card-border-outer h-28 h-max -mt-4 p-1  ">
         <div className="grid grid-cols-2">
           <div className="">
-            <div className="text-xl text-bold text-[#F1C004] "> #32000 </div>
+            <div className="text-xl text-bold text-yellow "> #32000 </div>
             <div className="text-sm "> Hoz Poccer Male </div>
             <div className="text-sm text-[#A7B0FF] "> 0X993434343…. </div>
           </div>
