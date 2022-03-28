@@ -41,7 +41,7 @@ export default function MarketPlace() {
     (async () => {
       try {
         const response = await getDogs();
-        console.log("dogs", dogs);
+        console.log("response", response.data);
         setDogs(response.data);
       } catch (error) {
         console.log(error);
@@ -52,7 +52,7 @@ export default function MarketPlace() {
   }, []);
 
   return (
-    <div className="grid grid-cols-4">
+    <div className="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-6">
       {dogs.map((item, index) => (
         <ItemCard key={index} item={item} key={index} />
       ))}

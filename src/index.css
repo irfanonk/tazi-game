@@ -14,3 +14,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.card-border-outer {
+  border-width: 1rem;
+  border-image: url("./assets/images/dog-card-border-frame.png") 50% 50% / 100%
+    100%;
+}
+
+/* .card-border-outer {
+  border-bottom: 3px solid #7bebf4;
+  padding: 0.3rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.card-border-inner-1 {
+  border: 1px solid #7bebf4;
+  padding: 0.1rem;
+}
+.card-border-inner-2 {
+  border: 1px solid #7bebf4;
+  padding: 1rem;
+} */

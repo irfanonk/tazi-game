@@ -2,46 +2,47 @@ import React from "react";
 import { dog1, dog2, dog3 } from "../assets/svgs/dogSvg";
 
 export default function ItemCard({ item }) {
-  const { id, title, bgColor, key } = item;
+  const { id, title, ticket, likes } = item;
   return (
     <div className="bg-transparent">
-      <div className="">
+      <div className="flex relative">
+        <div className="flex justify-center items-center absolute  top-5 right-0 mr-4">
+          <img
+            className="w-[20px] h-[17px] rounded-full text-white mr-2"
+            src={require("../assets/images/heart.png")}
+            alt=""
+          />
+          <div className="text-l"> {likes} </div>
+        </div>
         <img
-          className={`max-w-sm h-auto pb-4 bg-main-background  bg-cover bg-right`}
+          className=" w-full h-full"
           src={require("../assets/images/dog-" + id + ".png")}
           alt=""
         />
-
-        <div className=" fixed  z-[2]"> naber</div>
+        <div className="flex justify-center items-center absolute  bottom-4 right-0 mr-4   ">
+          <div className="w-[29px] h-[29px] rounded-full bg-[#33FFFF] z-[3] "></div>
+          <div className="w-[29px] h-[29px] rounded-full bg-[#032F66] z-[2] -ml-4"></div>
+          <div className="w-[29px] h-[29px] rounded-full bg-[#718BC8] z-[1] -ml-4"></div>
+        </div>
       </div>
-      <div className="p-5">
-        <a href="#">
-          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-            Noteworthy technology acquisitions 2021
-          </h5>
-        </a>
-        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-          Here are the biggest enterprise technology acquisitions of 2021 so
-          far, in reverse chronological order.
-        </p>
-        <a
-          href="#"
-          className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-        >
-          Read more
-          <svg
-            className="ml-2 -mr-1 w-4 h-4"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
-        </a>
+      <div className="card-border-outer h-28 h-max -mt-4 p-1  ">
+        <div className="grid grid-cols-2">
+          <div className="">
+            <div className="text-xl text-bold text-[#F1C004] "> #32000 </div>
+            <div className="text-sm "> Hoz Poccer Male </div>
+            <div className="text-sm text-[#A7B0FF] "> 0X993434343…. </div>
+          </div>
+          <div className="flex justify-center items-center">
+            <div className="flex justify-center items-center  h-[48px] h-fit w-[100px]  bg-dog-card-footer-label bg-no-repeat bg-cover">
+              <img
+                className="w-6 h-6 mr-2"
+                src={require("../assets/images/dog-card-footer-label-icon.png")}
+                alt=""
+              />
+              <div className="text-3xl font-bold">{ticket + 200} </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -5,12 +5,8 @@ module.exports = {
       backgroundImage: {
         "main-background": "url('assets/images/futuristic-background.png')",
         "layout-header-one": "url('assets/images/layout-header-one.png')",
-      },
-      images: {
-        dog1: "url('assets/images/dog1.png')",
-        dog2: "url('assets/images/dog2.png')",
-        dog3: "url('assets/images/dog3.png')",
-        dog4: "url('assets/images/dog4.png')",
+        "dog-card-footer-label":
+          "url('assets/images/dog-card-footer-label.png')",
       },
     },
     fontFamily: {
