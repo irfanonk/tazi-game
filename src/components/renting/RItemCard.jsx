@@ -2,14 +2,43 @@ import React from "react";
 
 export default function RItemCard({ item }) {
   const { id, title, ticket, likes } = item;
+  const colors = [
+    "#7F8673",
+    "#F1C004",
+    "#4F7D27",
+    "#FF00FF",
+    "#F1C004",
+    "#FF8C00",
+    "#4F7D27",
+    "#FF00FF",
+    "#F1C004",
+    "#FF8C00",
+    "#4F7D27",
+    "#FF00FF",
+    "#F1C004",
+    "#FF8C00",
+    "#4F7D27",
+    "#FF00FF",
+    "#F1C004",
+    "#FF8C00",
+    "#4F7D27",
+    "#FF00FF",
+  ];
+  console.log("bg", `bg-[${colors[id - 1]}]`);
   return (
     <div className="bg-transparent">
-      <div className="flex relative">
+      <div className="flex relative ">
         <img
           className=" w-full h-full"
-          src={require("../../assets/images/dog-" + id + ".png")}
+          // src={require("../../assets/images/dog-" + id + ".png")}
+          src={require("../../assets/images/dog.png")}
           alt=""
         />
+        <div
+          className={`bg-[${
+            colors[id - 1]
+          }] opacity-1 w-[350px] h-[300px] absolute  bottom-0 right-0`}
+        ></div>
         <div className="flex justify-end items-center absolute  bottom-4 right-0 mr-4">
           <div className="flex justify-center items-center h-[48px] w-[160px] bg-dog-card-label bg-no-repeat bg-cover bg-center ">
             <div className="text-m font-bold uppercase"> 14% For You </div>
@@ -109,6 +138,7 @@ export default function RItemCard({ item }) {
             <div className="flex   items-center ">
               {Array.from({ length: 5 }).map((_, i) => (
                 <img
+                  key={i}
                   className="w-4 h-5 -mr-1"
                   src={require("../../assets/images/colored-power-arrow.png")}
                   alt=""
@@ -116,6 +146,7 @@ export default function RItemCard({ item }) {
               ))}
               {Array.from({ length: 5 }).map((_, i) => (
                 <img
+                  key={i}
                   className="w-4 h-5 -mr-1"
                   src={require("../../assets/images/colorless-power-arrow.png")}
                   alt=""
