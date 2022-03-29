@@ -26,29 +26,29 @@ export default function RItemCard({ item }) {
   ];
   console.log("bg", `bg-[${colors[id - 1]}]`);
   return (
-    <div className="bg-transparent">
+    <div className="bg-transparent w-96">
       <div className="flex relative ">
         <img
           className=" w-full h-full"
-          // src={require("../../assets/images/dog-" + id + ".png")}
-          src={require("../../assets/images/dog.png")}
+          src={require("../../assets/images/dog-" + id + ".png")}
+          //src={require("../../assets/images/dog.png")}
           alt=""
         />
-        <div
+        {/* <div
           className={`bg-[${
             colors[id - 1]
           }] opacity-1 w-[350px] h-[300px] absolute  bottom-0 right-0`}
-        ></div>
+        ></div> */}
         <div className="flex justify-end items-center absolute  bottom-4 right-0 mr-4">
           <div className="flex justify-center items-center h-[48px] w-[160px] bg-dog-card-label bg-no-repeat bg-cover bg-center ">
             <div className="text-m font-bold uppercase"> 14% For You </div>
           </div>
         </div>
       </div>
-      <div className="card-border-outer h-28 h-max -mt-4 p-1  ">
+      <div className="card-border-outer h-28  h-max -mt-4 p-1  ">
         <div className="flex">
           <div className="">
-            <div className="text-m text-bold text-yellow ">
+            <div className="text-m font-bold text-yellow ">
               #32000 Leningagu
             </div>
             <div className="text-s "> Hoz Poccer Male </div>

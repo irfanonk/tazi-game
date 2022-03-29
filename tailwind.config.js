@@ -13,8 +13,10 @@ module.exports = {
 
       colors: {
         yellow: "#F1C004",
+        bgblue: "#00092E",
       },
     },
+
     fontSize: {
       xs: "10px",
       s: "15px",
@@ -23,9 +25,6 @@ module.exports = {
       md: "25px",
       l: "30px",
     },
-    // fontFamily: {
-    //   sans: ["Proxima Nova", ...defaultTheme.fontFamily.sans],
-    // },
   },
   plugins: [],
 };
