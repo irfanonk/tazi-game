@@ -25,30 +25,30 @@ export default function PlayListTable({ games }) {
         <tbody>
           {games.map((item, index) => (
             <tr key={index} className="text-md ">
-              <td className="play-list-table-column border-b-2  px-4 py-2 ">
+              <td className="play-list-table-column border-b-4 border-transparent px-4 py-2 ">
                 <div className="play-list-table-column-item">
                   {"Race #" + item.event * 1000}
                 </div>
               </td>
-              <td className="play-list-table-column border-b-2 px-4 py-2 ">
+              <td className="play-list-table-column border-b-4 border-transparent px-4 py-2 ">
                 <div className="play-list-table-column-item">
                   {item.location}
                 </div>
               </td>
-              <td className="play-list-table-column border-b-2 px-4 py-2 ">
+              <td className="play-list-table-column border-b-4 border-transparent px-4 py-2 ">
                 <div className="play-list-table-column-item">{item.class}</div>
               </td>
-              <td className="play-list-table-column border-b-2 px-4 py-2 ">
+              <td className="play-list-table-column border-b-4 border-transparent px-4 py-2 ">
                 <div className="play-list-table-column-item">
                   {item.distance}
                 </div>
               </td>
-              <td className="play-list-table-column border-b-2  px-4 py-2 ">
+              <td className="play-list-table-column border-b-4 border-transparent  px-4 py-2 ">
                 <div className="play-list-table-column-item">
                   {new Date(item.date).toLocaleDateString("en-US")}
                 </div>
               </td>
-              <td className="play-list-table-column text-yellow gap-x-2 border-b-2 px-4 py-2 ">
+              <td className="play-list-table-column text-yellow gap-x-2 border-b-4 border-transparent px-4 py-2 ">
                 <div className="flex justify-center items-center gap-x-4 play-list-table-column-item">
                   <svg
                     id="coin"
@@ -107,7 +107,7 @@ export default function PlayListTable({ games }) {
                   <div>{item.prizepool}</div>
                 </div>
               </td>
-              <td className="play-list-table-column  border-b-2 px-4 py-2 ">
+              <td className="play-list-table-column  border-b-4 border-transparent px-4 py-2 ">
                 <div className="flex justify-center items-center gap-x-6 play-list-table-column-item">
                   <svg
                     id="play-button-arrowhead"
