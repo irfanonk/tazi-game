@@ -9,8 +9,11 @@
   }
 }
 
-.text-blur {
+.text-blur-6 {
   text-shadow: 0px 0px 6px;
+}
+.text-blur-10 {
+  text-shadow: 0px 0px 10px;
 }
 
 .card-border-outer {
@@ -25,7 +28,7 @@
 .inpage-header-box {
   clip-path: polygon(0 1%, 100% 1%, 100% 50%, 97% 100%, 3% 100%, 0 50%);
 }
-.table-box {
+.play-list-table-box {
   clip-path: polygon(
     5% 0,
     95% 0,
@@ -36,4 +39,36 @@
     0 95%,
     0 5%
   );
+  position: relative;
+}
+.play-list-table-box::after {
+  content: "";
+  background: url("./assets/images/play-list-table-box-bg.png ");
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+}
+.play-list-table {
+  position: relative;
+  z-index: 1;
+}
+.play-list-table-column {
+  position: relative;
+}
+.play-list-table-column::after {
+  content: "";
+  background: #00092e;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.6;
+}
+.play-list-table-column-item {
+  position: relative;
+  z-index: 1;
 }

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function PaginationSection() {
   return (
-    <div className="pagination-box text-blur text-center justify-center flex items-center h-[67px] min-h-full bg-[#051B5C]  ">
+    <div className="pagination-box text-blur-6 text-center justify-center flex items-center h-[67px] min-h-full bg-[#051B5C]  ">
       <div className="flex flex-1 text-s justify-start items-center ml-12">
         <img
           className="w-3 h-4 rotate-180 mr-1 "

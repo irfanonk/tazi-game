@@ -2,7 +2,7 @@ import React from "react";
 
 export default function MPHeaderSection() {
   return (
-    <div className="inpage-header-box text-blur  text-center justify-center flex items-center h-[67px] min-h-full bg-[#051B5C]  ">
+    <div className="inpage-header-box text-blur-6  text-center justify-center flex items-center h-[67px] min-h-full bg-[#051B5C]  ">
       <div className="flex flex-1 justify-start items-center "></div>
       <div className="flex flex-2   text-md justify-center items-center gap-4">
         <div className="text-yellow   font-bold uppercase">all</div>

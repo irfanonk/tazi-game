@@ -21,7 +21,7 @@ export default function Navbar() {
                 } text-md font-semibold uppercase hover:text-yellow transition duration-200`}
                 to={`/${item}`}
               >
-                <div className="text-md uppercase text-blur ">
+                <div className="text-md uppercase text-blur-6 ">
                   {item.replace("-", " ")}
                 </div>
               </Link>
