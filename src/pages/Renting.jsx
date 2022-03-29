@@ -23,15 +23,15 @@ export default function Renting() {
 
   return (
     <div className="p-10 ">
-      <div className="mb-10">
+      <div className="mb-8">
         <RHeaderSection />
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-x-2 gap-y-14">
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-x-4 gap-y-20">
         {dogs.map((item, index) => (
           <RItemCard key={index} item={item} key={index} />
         ))}
       </div>
-      <div className="mt-20">
+      <div className="mt-24">
         <PaginationSection />
       </div>
     </div>
