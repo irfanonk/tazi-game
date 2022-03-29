@@ -1,3 +1,4 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
@@ -14,10 +15,17 @@ module.exports = {
         yellow: "#F1C004",
       },
     },
-    fontFamily: {
-      festive: ["Festive", "cursive"],
-      inter: ["Inter", "sans-serif"],
+    fontSize: {
+      xs: "10px",
+      s: "15px",
+      sm: "17px",
+      m: "22px",
+      md: "25px",
+      l: "30px",
     },
+    // fontFamily: {
+    //   sans: ["Proxima Nova", ...defaultTheme.fontFamily.sans],
+    // },
   },
   plugins: [],
 };

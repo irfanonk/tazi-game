@@ -20,10 +20,10 @@ export default function Navbar() {
               isActive={path === `/${item}`}
               className={`${
                 path === `/${item}` ? "text-yellow" : "text-white"
-              } text-2xl font-semibold uppercase hover:text-yellow transition duration-200`}
+              } text-md font-semibold uppercase hover:text-yellow transition duration-200`}
               to={`/${item}`}
             >
-              <p className="text-3xl uppercase">{item.replace("-", " ")} </p>{" "}
+              <p className="text-md uppercase">{item.replace("-", " ")} </p>{" "}
             </Link>
           ))}
         </div>
@@ -37,7 +37,7 @@ export default function Navbar() {
           />
         </div>
         <div className="flex-1 ">
-          <div className="text-3xl font-semibold  ">Lorenzo</div>
+          <div className="text-l font-semibold  ">Lorenzo</div>
           <div className="flex flex-1 gap-x-2 items-center ">
             <div className="w-[50%]  bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
               <div
@@ -45,7 +45,7 @@ export default function Navbar() {
                 style={{ width: "50%" }}
               ></div>
             </div>
-            <span className="text-md font-semibold uppercase">Level 1</span>
+            <span className="text-xs font-semibold uppercase">Level 1</span>
           </div>
         </div>
       </div>
