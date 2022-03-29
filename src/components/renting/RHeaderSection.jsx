@@ -2,7 +2,7 @@ import React from "react";
 
 export default function RHeaderSection() {
   return (
-    <div className="inpage-header-box text-center justify-center flex items-center h-[67px] min-h-full bg-[#051B5C]  ">
+    <div className="inpage-header-box text-blur text-center justify-center flex items-center h-[67px] min-h-full bg-[#051B5C]  ">
       <div className="flex flex-1 text-sm justify-start items-center ml-16 ">
         <div className="flex text-center items-center">
           <div className=" mr-1 ">All Bloodline</div>

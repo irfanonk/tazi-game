@@ -25,6 +25,7 @@ const Layout = ({ children }) => {
               />
             </svg>
           </div> */}
+
           {/* 
           <div className="h-16 bg-layout-header-one bg-auto bg-no-repeat bg-center bg-contain">
 
@@ -32,7 +33,7 @@ const Layout = ({ children }) => {
 
           <div className="h-16">
             <img
-              className=" drop-shadow-2xl -z-1"
+              className=" drop-shadow-[0_35px_35px_rgba(100,100,100,0.25)] "
               src={require("../assets/images/layout-header-one.png")}
               alt=""
             />

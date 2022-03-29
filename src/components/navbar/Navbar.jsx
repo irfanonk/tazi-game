@@ -17,11 +17,13 @@ export default function Navbar() {
                 key={index}
                 isActive={path === `/${item}`}
                 className={`${
-                  path === `/${item}` ? "text-yellow" : "text-white"
+                  path === `/${item}` ? "text-yellow " : "text-white"
                 } text-md font-semibold uppercase hover:text-yellow transition duration-200`}
                 to={`/${item}`}
               >
-                <p className="text-md uppercase">{item.replace("-", " ")} </p>{" "}
+                <div className="text-md uppercase text-blur ">
+                  {item.replace("-", " ")}
+                </div>
               </Link>
             ))}
           </div>
