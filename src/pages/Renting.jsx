@@ -26,7 +26,7 @@ export default function Renting() {
       <div className="mb-10">
         <RHeaderSection />
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-x-2 gap-y-14">
         {dogs.map((item, index) => (
           <RItemCard key={index} item={item} key={index} />
         ))}
