@@ -27,14 +27,14 @@ export default function RItemCard({ item }) {
   console.log("bg", `bg-[${colors[id - 1]}]`);
   return (
     <div className="bg-transparent ">
-      <div className="flex relative ">
+      <div className="flex relative  ">
         <div
           className={`bg-[${
             colors[id - 1]
           }] opacity-1 w-[350px] h-[300px] absolute  bottom-0 right-0`}
         ></div>
         <img
-          className="w-full h-full bg-main-background bg-cover bg-no-repeat bg-left"
+          className="w-full h-full card-image-box  p-2 bg-yellow bg-main-background bg-cover bg-no-repeat bg-left"
           // src={require("../../assets/images/dog-" + id + ".png")}
           src={require("../../assets/images/dog.png")}
           alt=""

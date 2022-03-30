@@ -17,7 +17,7 @@
 }
 
 .card-border-outer {
-  border-width: 1rem;
+  border-width: 2rem;
   border-image: url("./assets/images/dog-card-border-frame.png") 50% 50% / 100%
     100%;
 }
@@ -71,4 +71,22 @@
 .play-list-table-column-item {
   position: relative;
   z-index: 1;
+}
+
+.card-image-box {
+  clip-path: polygon(
+    15% 0,
+    40% 0,
+    44% 4%,
+    100% 4%,
+    100% 100%,
+    53% 100%,
+    0 100%,
+    0 58%,
+    0 4%,
+    10% 4%
+  );
+  border: 2px solid #7bebf4;
+  border-radius: 1rem;
+  position: relative;
 }

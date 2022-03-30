@@ -28,7 +28,6 @@ export default function MPItemCard({ item }) {
               />
             </g>
           </svg>
-
           <div className="text-md"> {likes} </div>
         </div>
         <img
@@ -42,8 +41,8 @@ export default function MPItemCard({ item }) {
           <div className="w-[29px] h-[29px] rounded-full bg-[#718BC8] z-[1] -ml-4"></div>
         </div>
       </div>
-      <div className="card-border-outer h-28 h-max -mt-4 p-1  ">
-        <div className="flex">
+      <div className="card-border-outer h-28 h-max -mt-8 ">
+        <div className="flex justify-between  ">
           <div className="">
             <div className="text-m font-bold text-yellow ">
               #32000 Leningagu
@@ -51,7 +50,7 @@ export default function MPItemCard({ item }) {
             <div className="text-s "> Hoz Poccer Male </div>
             <div className="text-s text-[#A7B0FF] "> 0X993434343…. </div>
           </div>
-          <div className="flex  ml-6 justify-end items-center">
+          <div className="flex  items-center ">
             <div className="flex justify-center items-center  h-[48px] w-[100px]   bg-dog-card-footer-label bg-no-repeat bg-cover">
               <img
                 className="w-6 h-6 mr-2"
