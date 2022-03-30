@@ -1,7 +1,12 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 import Navbar from "../components/navbar/Navbar";
 
 const Layout = ({ children }) => {
+  const pathname = useLocation().pathname;
+  console.log("pathname,", pathname);
+  const headerName = pathname.match("/breeding") ? "two" : "one";
+  console.log("headerName,", headerName);
   return (
     <>
       <main className="min-h-[100vh] text-white bg-bgblue bg-main-background bg-cover bg-no-repeat bg-center ">
@@ -34,7 +39,7 @@ const Layout = ({ children }) => {
           <div className="h-16">
             <img
               className=" drop-shadow-[0_35px_35px_rgba(100,100,100,0.25)] "
-              src={require("../assets/images/layout-header-one.png")}
+              src={require(`../assets/images/layout-header-${headerName}.png`)}
               alt=""
             />
           </div>
