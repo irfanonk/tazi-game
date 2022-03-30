@@ -19,12 +19,9 @@ export default function Breeding() {
     return () => {};
   }, []);
   return (
-    <div className="p-10 ">
-      <div className="corner-clipped-box px-8 py-16">
-        <BreedingSection games={games} />
-      </div>
-      <div className="mt-20">
-        <PaginationSection />
+    <div className="px-7 -mt-10">
+      <div className="corner-clipped-box px-[30px] py-[72px] ">
+        <BreedingSection />
       </div>
     </div>
   );
