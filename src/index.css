@@ -28,7 +28,11 @@
 .inpage-header-box {
   clip-path: polygon(0 1%, 100% 1%, 100% 50%, 97% 100%, 3% 100%, 0 50%);
 }
-.play-list-table-box {
+.corner-clipped-box {
+  position: relative;
+}
+.corner-clipped-box::after {
+  content: "";
   clip-path: polygon(
     5% 0,
     95% 0,
@@ -39,17 +43,13 @@
     0 95%,
     0 5%
   );
-  position: relative;
-}
-.play-list-table-box::after {
-  content: "";
-  background: url("./assets/images/play-list-table-box-bg.png ");
+  background-color: #2feef6;
   height: 100%;
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0.5;
+  opacity: 0.14;
 }
 .play-list-table {
   position: relative;

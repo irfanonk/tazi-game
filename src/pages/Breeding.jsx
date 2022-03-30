@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { getGameList } from "../apis/gameList";
+import BreedingSection from "../components/breeding/BreedingSection";
 import PaginationSection from "../components/common/PaginationSection";
-import PlayListTable from "../components/playnow/PlayListTable";
-import PNHeaderSection from "../components/playnow/RHeaderSection";
 
-export default function PlayNow() {
+export default function Breeding() {
   const [games, setGames] = useState([]);
   useEffect(() => {
     (async () => {
@@ -21,11 +20,8 @@ export default function PlayNow() {
   }, []);
   return (
     <div className="p-10 ">
-      <div className="mb-10">
-        <PNHeaderSection />
-      </div>
       <div className="corner-clipped-box px-8 py-16">
-        <PlayListTable games={games} />
+        <BreedingSection games={games} />
       </div>
       <div className="mt-20">
         <PaginationSection />

@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function PlayListTable({ games }) {
+export default function BreedingSection({ games }) {
   const tableHeaders = [
     "event",
     "location",
