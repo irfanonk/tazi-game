@@ -28,33 +28,34 @@ export default function RItemCard({ item }) {
   return (
     <div className="bg-transparent ">
       <div className="flex relative ">
-        <img
-          className=" w-full h-full"
-          src={require("../../assets/images/dog-" + id + ".png")}
-          //src={require("../../assets/images/dog.png")}
-          alt=""
-        />
-        {/* <div
+        <div
           className={`bg-[${
             colors[id - 1]
           }] opacity-1 w-[350px] h-[300px] absolute  bottom-0 right-0`}
-        ></div> */}
+        ></div>
+        <img
+          className="w-full h-full bg-main-background bg-cover bg-no-repeat bg-left"
+          // src={require("../../assets/images/dog-" + id + ".png")}
+          src={require("../../assets/images/dog.png")}
+          alt=""
+        />
+
         <div className="flex justify-end items-center absolute  bottom-4 right-0 mr-4">
           <div className="flex justify-center items-center h-[48px] w-[160px] bg-dog-card-label bg-no-repeat bg-cover bg-center ">
             <div className="text-m font-bold uppercase"> 14% For You </div>
           </div>
         </div>
       </div>
-      <div className="card-border-outer h-28  h-max -mt-4 p-1  ">
+      <div className="card-border-outer flex h-28  h-max -mt-4 p-1  ">
         <div className="flex">
-          <div className="">
+          <div className="flex-1">
             <div className="text-m font-bold text-yellow ">
               #32000 Leningagu
             </div>
             <div className="text-s "> Hoz Poccer Male </div>
             <div className="text-s text-[#A7B0FF] "> 0X993434343…. </div>
           </div>
-          <div className="flex flex-col gap-y-2.5  ml-6">
+          <div className="flex flex-col justify-center  gap-y-2.5">
             <div className="flex justify-between items-center">
               <svg
                 id="electricity"
@@ -135,7 +136,59 @@ export default function RItemCard({ item }) {
                 <div className=" font-bold text-yellow">25 </div>
               </div>
             </div>
-            <div className="flex   items-center ">
+            <div className="flex  items-center ">
+              {Array.from({ length: 5 }).map((_, i) => (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns="http://www.w3.org/1999/xlink"
+                  width="16.635"
+                  height="21.335"
+                  viewBox="0 0 16.635 21.335"
+                >
+                  <defs>
+                    <linearGradient
+                      id="linear-gradient"
+                      x1="0.841"
+                      y1="0.5"
+                      x2="-0.128"
+                      y2="0.835"
+                      gradientUnits="objectBoundingBox"
+                    >
+                      <stop offset="0" stop-color="#2feef6" />
+                      <stop offset="1" stop-color="#2feef6" stop-opacity="0" />
+                    </linearGradient>
+                  </defs>
+                  <path
+                    id="Path_3789"
+                    data-name="Path 3789"
+                    d="M642.853,321.911a1.142,1.142,0,0,0-1-.586h-8.305a1.13,1.13,0,0,0-1,1.674l4.412,7.95a1.119,1.119,0,0,1,0,1.088l-4.412,7.95a1.13,1.13,0,0,0,1,1.674h8.305a1.143,1.143,0,0,0,1-.586l5.016-9.038a1.122,1.122,0,0,0,0-1.088Z"
+                    transform="translate(-631.889 -320.825)"
+                    stroke="rgba(0,0,0,0)"
+                    stroke-width="1"
+                    fill="url(#linear-gradient)"
+                  />
+                </svg>
+              ))}
+              {Array.from({ length: 5 }).map((_, i) => (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16.635"
+                  height="21.335"
+                  viewBox="0 0 16.635 21.335"
+                >
+                  <path
+                    id="Path_3795"
+                    data-name="Path 3795"
+                    d="M775.548,321.911a1.143,1.143,0,0,0-1-.586h-8.305a1.13,1.13,0,0,0-1,1.674l4.412,7.95a1.12,1.12,0,0,1,0,1.088l-4.412,7.95a1.13,1.13,0,0,0,1,1.674h8.305a1.144,1.144,0,0,0,1-.586l5.016-9.038a1.119,1.119,0,0,0,0-1.088Z"
+                    transform="translate(-764.584 -320.825)"
+                    fill="#10375A"
+                    stroke="rgba(0,0,0,0)"
+                    stroke-width="1"
+                  />
+                </svg>
+              ))}
+            </div>
+            {/* <div className="flex   items-center ">
               {Array.from({ length: 5 }).map((_, i) => (
                 <img
                   key={i}
@@ -152,7 +205,7 @@ export default function RItemCard({ item }) {
                   alt=""
                 />
               ))}
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
