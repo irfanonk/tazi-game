@@ -50,7 +50,7 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-      <div class="flex -mt-[45px] -mb-[5px] justify-center">
+      {/* <div class="flex -mt-[45px] -mb-[5px] justify-center">
         <div class="flex w-1/3 opacity-40   justify-center bg-bgblue bg-cover bg-no-repeat bg-center">
           <img
             className=" drop-shadow-2xl -z-1"
@@ -58,7 +58,7 @@ export default function Navbar() {
             alt=""
           />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -43,13 +43,15 @@ export default function MPItemCard({ item }) {
         </div>
       </div>
       <div className="card-border-outer h-28 h-max -mt-4 p-1  ">
-        <div className="grid grid-cols-2">
+        <div className="flex">
           <div className="">
-            <div className="text-m text-bold text-yellow "> #32000 </div>
+            <div className="text-m font-bold text-yellow ">
+              #32000 Leningagu
+            </div>
             <div className="text-s "> Hoz Poccer Male </div>
             <div className="text-s text-[#A7B0FF] "> 0X993434343…. </div>
           </div>
-          <div className="flex justify-end items-center">
+          <div className="flex   ml-6 justify-end items-center">
             <div className="flex justify-center items-center  h-[48px] w-[100px]   bg-dog-card-footer-label bg-no-repeat bg-cover">
               <img
                 className="w-6 h-6 mr-2"

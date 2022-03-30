@@ -26,7 +26,7 @@ export default function RItemCard({ item }) {
   ];
   console.log("bg", `bg-[${colors[id - 1]}]`);
   return (
-    <div className="bg-transparent w-96">
+    <div className="bg-transparent ">
       <div className="flex relative ">
         <img
           className=" w-full h-full"
