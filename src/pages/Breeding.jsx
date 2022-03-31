@@ -19,7 +19,7 @@ export default function Breeding() {
     return () => {};
   }, []);
   return (
-    <div className="px-7 -mt-10">
+    <div className="px-7 -mt-72">
       <div className="corner-clipped-box px-[30px] py-[72px] ">
         <BreedingSection />
       </div>

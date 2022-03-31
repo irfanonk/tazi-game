@@ -36,9 +36,9 @@ const Layout = ({ children }) => {
 
           </div> */}
 
-          <div className="h-16">
+          <div className="">
             <img
-              className=" drop-shadow-[0_35px_35px_rgba(100,100,100,0.25)] "
+              className="w-full h-full"
               src={require(`../assets/images/layout-header-${headerName}.png`)}
               alt=""
             />

@@ -15,6 +15,9 @@
 .text-blur-10 {
   text-shadow: 0px 0px 10px;
 }
+.text-blur-22 {
+  text-shadow: 0px 0px 22px;
+}
 
 .card-border-outer {
   border-width: 2rem;
@@ -45,14 +48,19 @@
   );
   background-color: #2feef6; */
   background: url("./assets/images/corner-clipped-box-bg.png ") no-repeat;
+  background-size: cover;
   height: 100%;
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
 }
+.new-div {
+  background-color: #2feef6;
+}
 .side-shaped-box {
   position: relative;
+  z-index: 1;
 }
 .side-shaped-box::after {
   content: "";
@@ -68,6 +76,7 @@
   );
   background-color: #2feef6; */
   background: url("./assets/images/side-shaped-box-bg.png ") no-repeat;
+  background-size: contain;
   height: 100%;
   width: 100%;
   position: absolute;
