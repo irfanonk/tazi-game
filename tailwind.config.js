@@ -9,6 +9,7 @@ module.exports = {
         "dog-card-footer-label":
           "url('assets/images/dog-card-footer-label.png')",
         "dog-card-label": "url('assets/images/dog-card-label.png')",
+        "breed-info-box": "url('assets/images/breed-info-box.png')",
       },
 
       colors: {
@@ -24,8 +25,14 @@ module.exports = {
       m: "22px",
       md: "25px",
       l: "30px",
-      xl: "45px",
-      xxl: "60px",
+      xl: "35px",
+      "2xl": "40px",
+      "3xl": "45px",
+      "4xl": "50px",
+      "5xl": "55px",
+      "6xl": "60px",
+      "7xl": "65px",
+      "8xl": "70px",
     },
   },
   plugins: [],

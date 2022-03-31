@@ -32,7 +32,7 @@ export default function MPItemCard({ item }) {
         </div>
         <img
           className=" w-full h-full"
-          src={require("../../assets/images/dog-" + id + ".png")}
+          src={require("../../assets/images/dogs/dog-" + id + ".png")}
           alt=""
         />
         <div className="flex justify-center items-center absolute  bottom-4 right-0 mr-4   ">

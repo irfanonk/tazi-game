@@ -35,8 +35,8 @@ export default function RItemCard({ item }) {
         ></div>
         <img
           className="w-full h-full card-image-box  p-2 bg-yellow bg-main-background bg-cover bg-no-repeat bg-left"
-          // src={require("../../assets/images/dog-" + id + ".png")}
-          src={require("../../assets/images/dog.png")}
+          // src={require("../../assets/images/dogs/dog-" + id + ".png")}
+          src={require("../../assets/images/dogs/dog.png")}
           alt=""
         />
 
