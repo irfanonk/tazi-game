@@ -59,7 +59,7 @@
 .side-shaped-box {
   position: relative;
 }
-.side-shaped-box::after {
+.side-shaped-box::before {
   content: "";
   /* clip-path: polygon(
     5% 0,
@@ -73,7 +73,7 @@
   );
   background-color: #2feef6; */
   background: url("./assets/images/side-shaped-box-bg.png ") no-repeat;
-  background-size: contain;
+  background-size: 100% 100%;
   height: 100%;
   width: 100%;
   position: absolute;

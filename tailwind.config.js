@@ -9,7 +9,8 @@ module.exports = {
         "dog-card-footer-label":
           "url('assets/images/dog-card-footer-label.png')",
         "dog-card-label": "url('assets/images/dog-card-label.png')",
-        "breed-info-box": "url('assets/images/breed-info-box.png')",
+        "breed-info-box-left": "url('assets/images/breed-info-box-left.png')",
+        "breed-info-box-right": "url('assets/images/breed-info-box-right.png')",
       },
 
       colors: {
