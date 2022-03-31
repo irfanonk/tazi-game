@@ -32,7 +32,7 @@ export default function Navbar() {
           <div className="flex justify-end items-center ">
             <img
               className="inline object-cover w-12 h-12  rounded-md"
-              src="https://images.pexels.com/photos/2589653/pexels-photo-2589653.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+              src={require("../../assets/images/avatar-image.png")}
               alt="Profile image"
             />
           </div>
