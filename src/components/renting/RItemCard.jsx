@@ -41,7 +41,7 @@ export default function RItemCard({ item }) {
         />
 
         <div className="flex justify-end items-center absolute  bottom-4 right-0 mr-4">
-          <div className="flex justify-center items-center h-[48px] w-[160px] bg-dog-card-label bg-no-repeat bg-cover bg-center ">
+          <div className="flex justify-center items-center p-[12px]  bg-dog-card-label bg-no-repeat bg-contain bg-center ">
             <div className="text-m font-bold uppercase"> 14% For You </div>
           </div>
         </div>
