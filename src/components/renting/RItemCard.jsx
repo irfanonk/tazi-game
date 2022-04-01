@@ -1,44 +1,29 @@
 import React from "react";
 
-export default function RItemCard({ item }) {
+export default function RItemCard({ item, bgColor }) {
   const { id, title, ticket, likes } = item;
-  const colors = [
-    "#7F8673",
-    "#F1C004",
-    "#4F7D27",
-    "#FF00FF",
-    "#F1C004",
-    "#FF8C00",
-    "#4F7D27",
-    "#FF00FF",
-    "#F1C004",
-    "#FF8C00",
-    "#4F7D27",
-    "#FF00FF",
-    "#F1C004",
-    "#FF8C00",
-    "#4F7D27",
-    "#FF00FF",
-    "#F1C004",
-    "#FF8C00",
-    "#4F7D27",
-    "#FF00FF",
-  ];
-  console.log("bg", `bg-[${colors[id - 1]}]`);
+  console.log("bgColor", bgColor);
+
+  // console.log("bg", id, `bg-[${colors[id - 1]}]`);
   return (
     <div className="bg-transparent ">
       <div className="flex relative  ">
-        <div
+        {/* <div
           className={`bg-[${
             colors[id - 1]
           }] opacity-1 w-[350px] h-[300px] absolute  bottom-0 right-0`}
-        ></div>
-        <img
-          className="w-full h-full card-image-box  p-2 bg-yellow bg-main-background bg-cover bg-no-repeat bg-left"
-          // src={require("../../assets/images/dogs/dog-" + id + ".png")}
-          src={require("../../assets/images/dogs/dog.png")}
-          alt=""
-        />
+        ></div> */}
+        <div className="card-image-box-outside">
+          <div className="card-image-box-insides  bg-[#FF9E9D]">
+            <div className={`overlay opacity-50 bg-[#FF9E9D] `}></div>
+            <img
+              className=" bg-main-background bg-cover bg-no-repeat bg-left "
+              // src={require("../../assets/images/dogs/dog-" + id + ".png")}
+              src={require("../../assets/images/dogs/dog.png")}
+              alt=""
+            />
+          </div>
+        </div>
 
         <div className="flex justify-end items-center absolute  bottom-4 right-0 mr-4">
           <div className="flex justify-center items-center p-[12px]  bg-dog-card-label bg-no-repeat bg-contain bg-center ">

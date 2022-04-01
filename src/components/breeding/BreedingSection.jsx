@@ -4,7 +4,7 @@ export default function BreedingSection() {
   const filterItems = ["Breed Type", "Blood Line", "Breed Count"];
   return (
     <div className="side-shaped-box h-full ">
-      <div>
+      <div className="">
         <div class="relative flex flex-col py-[7px] px-[31.3px]  ">
           {/* col-1 */}
           <div class="flex flex-row justify-between">
@@ -53,6 +53,20 @@ export default function BreedingSection() {
             </div>
           </div>
         </div>
+        {/* <div className="relative flex flex-row justify-center items-center ">
+          <div className=" bg-greyhound  bg-no-repeat bg-cover bg-center bg-fixed ">
+            deneme
+          </div>
+          <div className=" bg-greyhound  bg-no-repeat bg-auto bg-center  ">
+            deneme
+          </div>
+        </div> */}
+        {/* <div className="relative flex">
+          <div id="bg">
+            <img src={require("../../assets/images/greyhound.png")} alt="" />
+          </div>
+        </div> */}
+
         <div className="flex justify-center items-center absolute inset-x-0 -bottom-10  ">
           <div className="flex justify-center items-center px-[103px] py-[15px] bg-dog-card-label bg-no-repeat bg-contain bg-center ">
             <div className="text-xl font-bold uppercase"> Breed </div>

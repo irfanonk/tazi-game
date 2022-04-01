@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
   console.log("headerName,", headerName);
   return (
     <>
-      <main className="min-h-[100vh] text-white bg-bgblue bg-main-background bg-cover bg-no-repeat bg-center ">
+      <main className="min-h-[100vh] text-white bg-bgblue bg-main-background bg-cover bg-no-repeat bg-center  ">
         <div className="container mx-auto">
           <Navbar />
           {/* shining blue elipse */}
