@@ -13,9 +13,9 @@ export default function RItemCard({ item, bgColor }) {
             colors[id - 1]
           }] opacity-1 w-[350px] h-[300px] absolute  bottom-0 right-0`}
         ></div> */}
-        <div className="card-image-box-outside">
-          <div className="card-image-box-insides  bg-[#FF9E9D]">
-            <div className={`overlay opacity-50 bg-[#FF9E9D] `}></div>
+        <div className="card-image-box-outside rounded-lg  ">
+          <div className="card-image-box-insides   ">
+            {/* <div className={`overlay rounded-lg opacity-50 bg-[#FF9E9D] `}></div> */}
             <img
               className=" bg-main-background bg-cover bg-no-repeat bg-left "
               // src={require("../../assets/images/dogs/dog-" + id + ".png")}
