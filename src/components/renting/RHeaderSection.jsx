@@ -13,10 +13,10 @@ export default function RHeaderSection() {
           />
         </div>
       </div>
-      <div className="flex flex-2 text-md justify-center items-center gap-4">
-        <div className="text-yellow  font-bold uppercase">all</div>
-        <div className="  font-bold uppercase">Pay Rent Feed</div>
-        <div className=" font-bold uppercase">Share Profit</div>
+      <div className="flex flex-2 text-md uppercase justify-center items-center gap-4">
+        <div className="text-yellow   ">all</div>
+        <div className="   ">Pay Rent Feed</div>
+        <div className="  ">Share Profit</div>
       </div>
       <div className="flex flex-1 text-sm justify-end mr-16 gap-3">
         <div className="flex text-center items-center">

@@ -17,7 +17,7 @@ export default function Navbar() {
               isActive={path === `/${item}`}
               className={`${
                 path === `/${item}` ? "text-yellow " : "text-white"
-              } text-md font-semibold uppercase hover:text-yellow transition duration-200`}
+              } text-md uppercase hover:text-yellow transition duration-200`}
               to={`/${item}`}
             >
               <div className="text-md uppercase text-blur-6 ">
