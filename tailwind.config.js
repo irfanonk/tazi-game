@@ -13,6 +13,8 @@ module.exports = {
         "breed-info-box-right": "url('assets/images/breed-info-box-right.png')",
         greyhound: "url('assets/images/greyhound.png')",
         "dog-card-frame": "url('assets/images/dog-card-frame.png')",
+        "dog-card-background":
+          "url('assets/images/futuristic-background-dog.png')",
       },
 
       colors: {

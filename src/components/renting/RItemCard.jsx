@@ -8,7 +8,7 @@ export default function RItemCard({ item, bgColor }) {
   return (
     <div className="bg-transparent ">
       <div className="relative dog-card-image">
-        <div className="bg-main-background bg-cover bg-no-repeat bg-right  ">
+        <div className="bg-dog-card-background bg-cover bg-no-repeat bg-center  ">
           {/* <div
             className={`overlay rounded-lg opacity-50 bg-[#FF9E9D] z-[2] `}
           ></div> */}
