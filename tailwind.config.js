@@ -12,6 +12,7 @@ module.exports = {
         "breed-info-box-left": "url('assets/images/breed-info-box-left.png')",
         "breed-info-box-right": "url('assets/images/breed-info-box-right.png')",
         greyhound: "url('assets/images/greyhound.png')",
+        "dog-card-frame": "url('assets/images/dog-card-frame.png')",
       },
 
       colors: {

@@ -7,15 +7,21 @@ export default function RItemCard({ item, bgColor }) {
   // console.log("bg", id, `bg-[${colors[id - 1]}]`);
   return (
     <div className="bg-transparent ">
-      <div className="flex relative  ">
-        {/* <div
-          className={`bg-[${
-            colors[id - 1]
-          }] opacity-1 w-[350px] h-[300px] absolute  bottom-0 right-0`}
-        ></div> */}
-        <div className="card-image-box-outside rounded-lg  ">
+      <div className="relative dog-card-image">
+        <div className="bg-main-background bg-cover bg-no-repeat bg-right  ">
+          <img
+            className=""
+            // src={require("../../assets/images/dogs/dog-" + id + ".png")}
+            src={require("../../assets/images/dogs/dog.png")}
+            alt=""
+          />
+        </div>
+
+        {/* <div className="card-image-box-outside rounded-lg  ">
           <div className="card-image-box-insides   ">
-            {/* <div className={`overlay rounded-lg opacity-50 bg-[#FF9E9D] `}></div> */}
+            <div
+              className={`overlay rounded-lg opacity-50 bg-[#FF9E9D] `}
+            ></div>
             <img
               className=" bg-main-background bg-cover bg-no-repeat bg-left "
               // src={require("../../assets/images/dogs/dog-" + id + ".png")}
@@ -23,7 +29,7 @@ export default function RItemCard({ item, bgColor }) {
               alt=""
             />
           </div>
-        </div>
+        </div> */}
 
         <div className="flex justify-end items-center absolute  bottom-4 right-0 mr-4">
           <div className="flex justify-center items-center p-[12px]  bg-dog-card-label bg-no-repeat bg-contain bg-center ">
@@ -31,16 +37,14 @@ export default function RItemCard({ item, bgColor }) {
           </div>
         </div>
       </div>
-      <div className="card-border-outer flex h-28  h-max -mt-4 p-1  ">
-        <div className="flex">
-          <div className="flex-1">
-            <div className="text-m font-bold text-yellow ">
-              #32000 Leningagu
-            </div>
+      <div className="dog-card-info  -mt-4 p-5  ">
+        <div className="flex flex-row">
+          <div className="w-4/6">
+            <div className="text-md text-yellow ">#32000 Leningagu</div>
             <div className="text-s "> Hoz Poccer Male </div>
             <div className="text-s text-[#A7B0FF] "> 0X993434343…. </div>
           </div>
-          <div className="flex flex-col justify-center  gap-y-2.5">
+          <div className="w-2/6 ">
             <div className="flex justify-between items-center">
               <svg
                 id="electricity"
@@ -121,7 +125,7 @@ export default function RItemCard({ item, bgColor }) {
                 <div className=" font-bold text-yellow">25 </div>
               </div>
             </div>
-            <div className="flex  items-center ">
+            <div className="flex items-center ">
               {Array.from({ length: 5 }).map((_, i) => (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

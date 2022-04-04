@@ -44,7 +44,7 @@ export default function Renting() {
   }, []);
 
   return (
-    <div className="p-10 ">
+    <div className=" ">
       <div className="mb-8">
         <RHeaderSection />
       </div>

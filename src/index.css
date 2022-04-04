@@ -18,7 +18,7 @@
 
 .card-border-outer {
   border-width: 2rem;
-  border-image: url("./assets/images/dog-card-border-frame.png") 50% 50% / 100%
+  border-image: url("./assets/images/dog-card-info-frame.png") 50% 50% / 100%
     100%;
 }
 
@@ -159,7 +159,14 @@
     10% 5%
   );
 }
-
+.dog-card-image {
+  background: url("./assets/images/dog-card-frame.png") no-repeat;
+  background-size: 100% 100%;
+}
+.dog-card-info {
+  background: url("./assets/images/dog-card-info-frame.png") no-repeat;
+  background-size: 100% 100%;
+}
 .card-image {
   position: relative;
 }
