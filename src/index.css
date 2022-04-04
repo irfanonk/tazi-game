@@ -1,13 +1,10 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
-
-@layer base {
-  html {
-    font-family: Sony Sketch EF;
-    src: font-url("./assets/fonts/Sony_Sketch_EF.ttf") format("truetype");
-  }
+@font-face {
+  font-family: "Sony_Sketch_EF";
+  src: url("./assets/fonts/Sony_Sketch_EF.woff") format("woff");
 }
+@tailwind utilities;
 
 .text-blur-6 {
   text-shadow: 0px 0px 6px;

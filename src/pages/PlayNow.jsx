@@ -10,7 +10,6 @@ export default function PlayNow() {
     (async () => {
       try {
         const response = await getGameList();
-        console.log("response", response.data);
         setGames(response.data);
       } catch (error) {
         console.log(error);

@@ -20,6 +20,10 @@ module.exports = {
       },
     },
 
+    fontFamily: {
+      sans: ["Sony_Sketch_EF", ...defaultTheme.fontFamily.sans],
+    },
+
     fontSize: {
       xs: "10px",
       s: "15px",
