@@ -9,6 +9,9 @@ export default function RItemCard({ item, bgColor }) {
     <div className="bg-transparent ">
       <div className="relative dog-card-image">
         <div className="bg-main-background bg-cover bg-no-repeat bg-right  ">
+          {/* <div
+            className={`overlay rounded-lg opacity-50 bg-[#FF9E9D] z-[2] `}
+          ></div> */}
           <img
             className=""
             // src={require("../../assets/images/dogs/dog-" + id + ".png")}
@@ -31,7 +34,7 @@ export default function RItemCard({ item, bgColor }) {
           </div>
         </div> */}
 
-        <div className="flex justify-end items-center absolute  bottom-4 right-0 mr-4">
+        <div className="flex justify-end items-center absolute  bottom-4 right-0 mr-4 z-[3] ">
           <div className="flex justify-center items-center p-[12px]  bg-dog-card-label bg-no-repeat bg-contain bg-center ">
             <div className="text-m font-bold uppercase"> 14% For You </div>
           </div>

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { getGameList } from "../apis/gameList";
 import PaginationSection from "../components/common/PaginationSection";
 import PlayListTable from "../components/playnow/PlayListTable";
-import PNHeaderSection from "../components/playnow/RHeaderSection";
+import PNHeaderSection from "../components/playnow/PNHeaderSection";
 
 export default function PlayNow() {
   const [games, setGames] = useState([]);
@@ -19,8 +19,8 @@ export default function PlayNow() {
     return () => {};
   }, []);
   return (
-    <div className="p-10 ">
-      <div className="mb-10">
+    <div className="">
+      <div className="mb-6">
         <PNHeaderSection />
       </div>
       <div className="corner-clipped-box px-8 py-16">

@@ -45,7 +45,7 @@ export default function Renting() {
 
   return (
     <div className=" ">
-      <div className="mb-8">
+      <div className="mb-6">
         <RHeaderSection />
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-x-4 gap-y-20">
