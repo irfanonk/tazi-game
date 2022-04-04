@@ -36,7 +36,12 @@ const Layout = ({ children }) => {
 
           </div> */}
 
-          <div className="">
+          <div className="flex flex-col justify-center items-center ">
+            <img
+              className=" max-w-full h-auto  -mb-[22px] "
+              src={require("../assets/images/roco.png")}
+              alt=""
+            />
             <img
               className="w-full h-full"
               src={require(`../assets/images/layout-header-${headerName}.png`)}
