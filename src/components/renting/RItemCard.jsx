@@ -40,7 +40,7 @@ export default function RItemCard({ item, bgColor }) {
           </div>
         </div>
       </div>
-      <div className="dog-card-info  -mt-2 p-5  ">
+      <div className="dog-card-info  -mt-3 p-5  ">
         <div className="flex flex-row">
           <div className="w-4/6">
             <div className="text-md text-yellow ">#32000 Leningagu</div>
