@@ -14,8 +14,8 @@ export default function RItemCard({ item, bgColor }) {
           ></div> */}
           <img
             className=""
-            // src={require("../../assets/images/dogs/dog-" + id + ".png")}
-            src={require("../../assets/images/dogs/dog.png")}
+            src={require("../../assets/images/dogs/dog-" + id + ".png")}
+            // src={require("../../assets/images/dogs/dog.png")}
             alt=""
           />
         </div>
@@ -47,7 +47,7 @@ export default function RItemCard({ item, bgColor }) {
             <div className="text-s "> Hoz Poccer Male </div>
             <div className="text-s text-[#A7B0FF] "> 0X993434343…. </div>
           </div>
-          <div className="w-2/6 ">
+          <div className="w-2/6 self-center ">
             <div className="flex justify-between items-center">
               <svg
                 id="electricity"
@@ -128,56 +128,64 @@ export default function RItemCard({ item, bgColor }) {
                 <div className=" font-bold text-yellow">25 </div>
               </div>
             </div>
-            <div className="flex items-center ">
+            <div className="flex items-center  ">
               {Array.from({ length: 5 }).map((_, i) => (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns="http://www.w3.org/1999/xlink"
-                  width="16.635"
-                  height="21.335"
-                  viewBox="0 0 16.635 21.335"
-                >
-                  <defs>
-                    <linearGradient
-                      id="linear-gradient"
-                      x1="0.841"
-                      y1="0.5"
-                      x2="-0.128"
-                      y2="0.835"
-                      gradientUnits="objectBoundingBox"
-                    >
-                      <stop offset="0" stop-color="#2feef6" />
-                      <stop offset="1" stop-color="#2feef6" stop-opacity="0" />
-                    </linearGradient>
-                  </defs>
-                  <path
-                    id="Path_3789"
-                    data-name="Path 3789"
-                    d="M642.853,321.911a1.142,1.142,0,0,0-1-.586h-8.305a1.13,1.13,0,0,0-1,1.674l4.412,7.95a1.119,1.119,0,0,1,0,1.088l-4.412,7.95a1.13,1.13,0,0,0,1,1.674h8.305a1.143,1.143,0,0,0,1-.586l5.016-9.038a1.122,1.122,0,0,0,0-1.088Z"
-                    transform="translate(-631.889 -320.825)"
-                    stroke="rgba(0,0,0,0)"
-                    stroke-width="1"
-                    fill="url(#linear-gradient)"
-                  />
-                </svg>
+                <div className="-mr-[3px]">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns="http://www.w3.org/1999/xlink"
+                    width="15"
+                    height="20"
+                    viewBox="0 0 15 20"
+                  >
+                    <defs>
+                      <linearGradient
+                        id="linear-gradient"
+                        x1="0.841"
+                        y1="0.5"
+                        x2="-0.128"
+                        y2="0.835"
+                        gradientUnits="objectBoundingBox"
+                      >
+                        <stop offset="0" stop-color="#2feef6" />
+                        <stop
+                          offset="1"
+                          stop-color="#2feef6"
+                          stop-opacity="0"
+                        />
+                      </linearGradient>
+                    </defs>
+                    <path
+                      id="Path_3789"
+                      data-name="Path 3789"
+                      d="M642.853,321.911a1.142,1.142,0,0,0-1-.586h-8.305a1.13,1.13,0,0,0-1,1.674l4.412,7.95a1.119,1.119,0,0,1,0,1.088l-4.412,7.95a1.13,1.13,0,0,0,1,1.674h8.305a1.143,1.143,0,0,0,1-.586l5.016-9.038a1.122,1.122,0,0,0,0-1.088Z"
+                      transform="translate(-631.889 -320.825)"
+                      stroke="rgba(0,0,0,0)"
+                      stroke-width="1"
+                      fill="url(#linear-gradient)"
+                    />
+                  </svg>
+                </div>
               ))}
               {Array.from({ length: 5 }).map((_, i) => (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16.635"
-                  height="21.335"
-                  viewBox="0 0 16.635 21.335"
-                >
-                  <path
-                    id="Path_3795"
-                    data-name="Path 3795"
-                    d="M775.548,321.911a1.143,1.143,0,0,0-1-.586h-8.305a1.13,1.13,0,0,0-1,1.674l4.412,7.95a1.12,1.12,0,0,1,0,1.088l-4.412,7.95a1.13,1.13,0,0,0,1,1.674h8.305a1.144,1.144,0,0,0,1-.586l5.016-9.038a1.119,1.119,0,0,0,0-1.088Z"
-                    transform="translate(-764.584 -320.825)"
-                    fill="#10375A"
-                    stroke="rgba(0,0,0,0)"
-                    stroke-width="1"
-                  />
-                </svg>
+                <div className="-mr-[3px]">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="20"
+                    viewBox="0 0 15 20"
+                  >
+                    <path
+                      id="Path_3795"
+                      data-name="Path 3795"
+                      d="M775.548,321.911a1.143,1.143,0,0,0-1-.586h-8.305a1.13,1.13,0,0,0-1,1.674l4.412,7.95a1.12,1.12,0,0,1,0,1.088l-4.412,7.95a1.13,1.13,0,0,0,1,1.674h8.305a1.144,1.144,0,0,0,1-.586l5.016-9.038a1.119,1.119,0,0,0,0-1.088Z"
+                      transform="translate(-764.584 -320.825)"
+                      fill="#10375A"
+                      stroke="rgba(0,0,0,0)"
+                      stroke-width="1"
+                    />
+                  </svg>
+                </div>
               ))}
             </div>
             {/* <div className="flex   items-center ">
