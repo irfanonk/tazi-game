@@ -159,13 +159,15 @@
     10% 5%
   );
 }
-.dog-card-image {
+.dog-card-frame {
   background: url("./assets/images/dog-card-frame.png") no-repeat;
   background-size: 100% 100%;
+  background-position: center;
 }
 .dog-card-info {
   background: url("./assets/images/dog-card-info-frame.png") no-repeat;
   background-size: 100% 100%;
+  background-position: center;
 }
 .card-image {
   position: relative;

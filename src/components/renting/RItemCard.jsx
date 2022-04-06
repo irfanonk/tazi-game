@@ -2,12 +2,12 @@ import React from "react";
 
 export default function RItemCard({ item, bgColor }) {
   const { id, title, ticket, likes } = item;
-  console.log("bgColor", bgColor);
+  // console.log("bgColor", bgColor);
 
   // console.log("bg", id, `bg-[${colors[id - 1]}]`);
   return (
     <div className="bg-transparent ">
-      <div className="relative dog-card-image">
+      <div className="relative dog-card-frame">
         <div className="bg-dog-card-background bg-cover bg-no-repeat bg-center  ">
           {/* <div
             className={`overlay rounded-lg opacity-50 bg-[#FF9E9D] z-[2] `}
@@ -36,11 +36,11 @@ export default function RItemCard({ item, bgColor }) {
 
         <div className="flex justify-end items-center absolute  bottom-4 right-0 mr-4 z-[3] ">
           <div className="flex justify-center items-center p-[12px]  bg-dog-card-label bg-no-repeat bg-contain bg-center ">
-            <div className="text-m font-bold uppercase"> 14% For You </div>
+            <div className="text-m  uppercase"> 14% For You </div>
           </div>
         </div>
       </div>
-      <div className="dog-card-info  -mt-4 p-5  ">
+      <div className="dog-card-info  -mt-2 p-5  ">
         <div className="flex flex-row">
           <div className="w-4/6">
             <div className="text-md text-yellow ">#32000 Leningagu</div>
