@@ -36,7 +36,7 @@ export default function RItemCard({ item, bgColor }) {
 
         <div className="flex justify-end items-center absolute  bottom-4 right-0 mr-4 z-[3] ">
           <div className="flex justify-center items-center p-[12px]  bg-dog-card-label bg-no-repeat bg-contain bg-center ">
-            <div className="text-m  uppercase"> 14% For You </div>
+            <div className="text-m   uppercase"> 14% For You </div>
           </div>
         </div>
       </div>

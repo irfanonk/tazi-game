@@ -8,7 +8,8 @@ export default function Navbar() {
   const path = location.pathname;
   return (
     <div className="flex justify-center  pt-5 ">
-      <div className="flex flex-1 justify-center content-center gap-16">
+      <div className=""></div>
+      <div className=" flex flex-1 justify-center content-center  gap-6 xl:gap-16">
         {navItems.map((item, index) => (
           <Link
             key={index}

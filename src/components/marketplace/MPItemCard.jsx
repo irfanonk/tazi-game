@@ -41,13 +41,13 @@ export default function MPItemCard({ item }) {
           <div className="w-[29px] h-[29px] rounded-full bg-[#718BC8] z-[1] -ml-4"></div>
         </div>
       </div>
-      <div className="card-border-outer h-28 h-max -mt-8 ">
+      <div className="dog-card-info  -mt-3 p-5   ">
         <div className="flex justify-between  ">
           <div className="">
-            <div className="text-m font-bold text-yellow ">
+            <div className="xl:text-md text-sm text-yellow ">
               #32000 Leningagu
             </div>
-            <div className="text-s "> Hoz Poccer Male </div>
+            <div className="text-s"> Hoz Poccer Male </div>
             <div className="text-s text-[#A7B0FF] "> 0X993434343…. </div>
           </div>
           <div className="flex  items-center ">

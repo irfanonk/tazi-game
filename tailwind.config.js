@@ -4,17 +4,20 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "main-background": "url('assets/images/futuristic-background.png')",
-        "layout-header-one": "url('assets/images/layout-header-one.png')",
+        "main-background":
+          "url('/src/assets/images/futuristic-background.png')",
+        "layout-header-one": "url('/src/assets/images/layout-header-one.png')",
         "dog-card-footer-label":
-          "url('assets/images/dog-card-footer-label.png')",
-        "dog-card-label": "url('assets/images/dog-card-label.png')",
-        "breed-info-box-left": "url('assets/images/breed-info-box-left.png')",
-        "breed-info-box-right": "url('assets/images/breed-info-box-right.png')",
-        greyhound: "url('assets/images/greyhound.png')",
-        "dog-card-frame": "url('assets/images/dog-card-frame.png')",
+          "url('/src/assets/images/dog-card-footer-label.png')",
+        "dog-card-label": "url('/src/assets/images/dog-card-label.png')",
+        "breed-info-box-left":
+          "url('/src/assets/images/breed-info-box-left.png')",
+        "breed-info-box-right":
+          "url('/src/assets/images/breed-info-box-right.png')",
+        greyhound: "url('/src/assets/images/greyhound.png')",
+        "dog-card-frame": "url('/src/assets/images/dog-card-frame.png')",
         "dog-card-background":
-          "url('assets/images/futuristic-background-dog.png')",
+          "url('/src/assets/images/futuristic-background-dog.png')",
       },
 
       colors: {
@@ -26,7 +29,42 @@ module.exports = {
     fontFamily: {
       sans: ["Sony_Sketch_EF", ...defaultTheme.fontFamily.sans],
     },
+    // screens: {
+    //   sm: "640px",
+    //   // => @media (min-width: 640px) { ... }
 
+    //   md: "768px",
+    //   // => @media (min-width: 768px) { ... }
+
+    //   lg: "1024px",
+    //   // => @media (min-width: 1024px) { ... }
+
+    //   xl: "1280px",
+    //   // => @media (min-width: 1280px) { ... }
+
+    //   "2xl": "1536px",
+    //   // => @media (min-width: 1536px) { ... }
+    // },
+    // fontSize: {
+    //   screens: {
+    //     "2xl": {
+    //       xs: "10px",
+    //       s: "15px",
+    //       sm: "17px",
+    //       "2sm": "20px",
+    //       m: "50px",
+    //       md: "25px",
+    //     },
+    //     xl: {
+    //       xs: "5px",
+    //       s: "7px",
+    //       sm: "10px",
+    //       "2sm": "15px",
+    //       m: "17px",
+    //       md: "20px",
+    //     },
+    //   },
+    // },
     fontSize: {
       xs: "10px",
       s: "15px",
